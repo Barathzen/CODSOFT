@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400&display=swap">
+    <title>Glamour Beauty</title>
+</head>
+<body>
+    <header>
+        <h1>Glamour Beauty</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Discover Your Beauty</h2>
+        <p>Explore our exquisite collection of makeup products.</p>
+        <a href="#products" class="cta-button">Shop Now</a>
+    </section>
+
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="lipstick.jpeg" alt="Lipstick">
+            <h3>Luxury Lipstick</h3>
+            <p>Long-lasting and vibrant colors for a perfect pout.</p>
+        </div>
+        <div class="product">
+            <img src="eyeshawdow.jpg" alt="Eyeshadow Palette">
+            <h3>Natural Eyeshadow Palette</h3>
+            <p>Create stunning eye looks with our versatile palette.</p>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <section id="about">
+        <h2>About Glamour Beauty</h2>
+        <p>Passionate about enhancing your beauty with high-quality, cruelty-free makeup products.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="location-map">
+                <!-- Add an embedded map here, e.g., using Google Maps API -->
+                <!-- Replace the placeholder below with your actual map embed code -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.432049537965!2d-122.0838!3d37.3866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb64041d3473%3A0x4a00b2d167e0ea3c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1638488203303!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Glamour Beauty. All rights reserved.</p>
+    </footer>
+</body>
+</html>

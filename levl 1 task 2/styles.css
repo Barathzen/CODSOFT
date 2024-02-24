@@ -1,0 +1,154 @@
+body {
+    font-family: 'Kode Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1em;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #E44D26;
+}
+
+#hero {
+    position: relative;
+    background-image: url('hero.jpeg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1em 2em;
+    margin-top: 1em;
+    text-decoration: none;
+    color: white;
+    background-color: #E44D26;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover,
+.form-submit-button:hover {
+    background-color: #333;
+}
+
+.cta-button:hover::after,
+.form-submit-button:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('hero.jpeg') center/cover no-repeat;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+section {
+    padding: 3em 0;
+    text-align: center;
+}
+
+.product img {
+    max-width: 30%;
+    height: auto;
+}
+
+.product {
+     margin: 2em;
+}
+
+#contact {
+    background-color: rgb(156, 169, 235);
+    padding: 3em 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #E44D26;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+.location-map {
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
