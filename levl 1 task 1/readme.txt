@@ -1,0 +1,1 @@
+open the lvl1.html
